@@ -1,0 +1,268 @@
+
+.home_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%
+  
+}
+
+
+.home-img img{
+    width: 350px;
+    height: auto;
+    border-radius: 10rem;
+    padding-bottom: 5rem;
+    
+    
+}
+
+
+.home-titulo h2{
+    font-family: "parrafo";
+    color: #fdfdfd;
+    font-size:50px;
+    letter-spacing: 1px;
+    line-height: 18px;
+  
+}
+.titulo .titulo-animado{
+    font-weight: bold;
+    color: var(--color-primario);
+    font-style: normal;
+
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 360px){
+    .home-titulo h2{
+        font-size: 25px !important;
+        
+
+    }
+
+    .home-img img{
+        width: 200px !important;
+        height: auto;
+    }
+
+    
+}
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+
+    body{
+    
+        background-size:185vh;
+        
+    }
+
+    .menu{
+        padding: 0;
+        
+    }
+    .menu_container{
+        background: rgb(0,0,0,.45) ;
+        margin: 0;
+        width: 100%;
+        border-bottom: 1px solid var(--color-primario);
+        flex-direction: column;
+    }
+     
+    .menu_enlaces{
+        margin: 5px 0 5px 0;
+    }
+    .enlace{
+       
+        font-size: 20px !important;
+        
+    }
+    .enlace:hover{
+        color: var(--color-primario);
+        box-shadow: none ;
+        background: none;
+       
+    }
+
+    .logo{
+        display: none;
+        width: 70px;
+        height: auto;
+    }
+
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home_container{
+        flex-direction: column;
+    }
+
+    .home-img{
+        padding: 0;
+        height: auto;
+    }
+
+    .home-img img{
+        width: 200px;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .titulo{
+        font-size: 30px !important;
+        line-height: 12px !important;
+        margin-top: 1rem;
+    }
+
+    .footer{
+        height: 6rem !important;
+        flex-direction: column-reverse;
+        
+    }   
+        
+    
+    
+    .footer-iconos{
+        height: 6rem;
+
+        justify-content: center;
+    }
+
+    
+    
+    .fa-brands{
+        font-size: 10px;
+        color: #5e3f3f;
+        padding: 5px 5px 2px 5px !important;
+  
+    }
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+
+    body{
+    
+        background-size:185vh;
+        
+    }
+    .logo{
+        width: 60px;
+        height: auto;
+    }
+    .enlace{
+        width: 10px;
+        font-size: 14px !important;
+        padding: 15px 5px;
+    }
+    .menu_enlaces{
+        min-width: 50px;
+        text-align: center;
+    }
+
+    .home-img img{
+        width: 270px;
+        height: auto;
+        margin-right: 2rem;
+    }
+
+    .home-titulo h2{
+        font-size:25px;
+        letter-spacing: 1px;
+        line-height: 10px;
+        padding: 0;
+
+    }
+
+    .footer{
+        height: 6rem !important;
+        flex-direction: column-reverse;
+        
+    }   
+        
+    
+    
+    .footer-iconos{
+        height: 6rem;
+
+        justify-content: center;
+    }
+
+    
+    
+    .fa-brands{
+        font-size: 10px;
+        color: #5e3f3f;
+        padding: 5px 5px 2px 5px !important;
+  
+    }
+
+    
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+
+    .logo{
+        width: 80px;
+        height: auto;
+    }
+    .enlace{
+        font-size: 18px !important;
+        padding: 15px 10px;
+    }
+
+    .home-img img{
+        width: 300px;
+        height: auto;
+        margin-right: 2rem;
+    }
+
+    .home-titulo h2{
+        font-size:30px;
+        letter-spacing: .5px;
+        line-height: 12px;
+
+    }
+    .footer{
+        background: #0c0513;
+        opacity: 90%;
+        height: 3rem !important;
+        flex-direction: row;
+  
+    }
+    
+    
+
+
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+    
+    .home-titulo h2{
+        font-size:50px;
+        letter-spacing: 1px;
+        line-height: 18px;
+
+    }
+    .home-img img{
+        width: 350px;
+        height: auto;
+        
+    }
+   
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+    body{
+    
+        background-size:cover;
+        
+    }
+ } 

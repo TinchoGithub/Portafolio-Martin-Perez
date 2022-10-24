@@ -1,0 +1,50 @@
+
+.menu_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 94%;
+    margin: 0 auto;
+    font-family: "parrafo";
+    
+   
+
+}
+
+.logo{
+    width: 80px;
+    height: auto;
+}
+
+.menu_enlaces{
+    min-width: 100px;
+    text-align: center;
+}
+
+.menu_enlaces a{
+    text-decoration: none;
+    color: #ffffff;   
+    font-size: 15px;
+    letter-spacing: 2px; 
+}
+
+.menu ul{
+    display: flex;
+   
+   
+}
+
+.enlace{
+    padding: 15px 30px;
+    font-size: 1rem;
+    
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.enlace:hover{
+    background: #c95bf5;
+    box-shadow: 0 0 10px var(--color-primario), 0 0 40px var(--color-primario), 0 0 80px var(--color-primario);
+    transition-delay: .2s;
+   
+}

@@ -1,0 +1,94 @@
+:root{
+    --color-primario: #c95bf5;
+    
+}
+
+@font-face{
+    font-family: "enlaces";
+    src: url(../fuentes/Home\ And\ Work.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "titulo";
+    src: url(../fuentes/LondrinaSolid-Regular.otf);
+}
+
+@font-face {
+    font-family: "formulario" ;
+    src: url(../fuentes/Dimbo\ Regular.ttf);
+}
+
+@font-face {
+    font-family: "parrafo";
+    src: url(../fuentes/Roboto-Regular.ttf);
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-image: url(../img/home-bg.jpg);
+    background-size: cover;
+    
+}
+#particles-js{
+    height: 80%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+header{
+    padding: 20px 0;
+    
+    
+}
+
+.contenedor-titulo{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    border-bottom: 1px solid rgb(255, 255, 255, .25);
+}
+
+.titulo{
+    color: var(--color-primario);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+    letter-spacing: 4px;
+    font-family: "titulo";
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.boton{
+    background: var(--color-primario);
+    margin-top: 10px;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    width: 140px;
+    height: 40px;
+    color:#fff
+    
+  
+    
+}
+.boton:hover{
+    box-shadow: 0 0 10px var(--color-primario), 0 0 20px var(--color-primario), 0 0 60px var(--color-primario);
+
+}
+
+
+
+
+
+

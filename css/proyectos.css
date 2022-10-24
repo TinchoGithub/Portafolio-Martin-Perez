@@ -1,0 +1,71 @@
+.card img{
+    height: 300px !important;
+}
+.card{
+    height: 450px !important;
+    width: 350px !important;
+    margin-bottom: 4rem;
+    padding-bottom: 1rem;
+    transition: all .5s;
+    
+    
+}
+
+#img-angular{
+    width: 270px !important;
+    height: auto;
+    
+}
+
+.card h2{
+    font-family: "titulo";
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.card p{
+    font-family: "parrafo";
+    letter-spacing: 1px;
+}
+
+.formacion{
+    margin: 0 5rem 1rem 5rem ;
+}
+
+.card:hover{
+    width: 360px !important;
+    height: 460px !important;
+}
+
+.iconos-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+
+    
+}
+
+.iconos-container-solo{
+    display: flex;
+    justify-content: center;
+}
+
+.iconos-container-solo i{
+    padding: 5px 0 0 0 !important;
+}
+
+#icono-proyecto{
+    font-size: 40px;
+    color: rgb(255, 255, 255, 0.50);
+    padding: 5px 20px 0 0;
+    
+    
+}
+
+#icono-proyecto:hover{
+   
+    color: var(--color-primario);
+
+}
+

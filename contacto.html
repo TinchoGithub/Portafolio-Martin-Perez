@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html   lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de proyectos personales">
+    <meta name="keywords" content="Martin Perez, martin perez, portafolio, portfolio, desarrollador web, programador">
+    <meta name="author" content="Martín Perez">
+    <title>Martín Perez | Portfolio</title>
+    <link rel="shortcut icon" href="./img/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css"> 
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/home.css">
+    
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="https://kit.fontawesome.com/c4b76b6bec.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body  >
+    
+
+    <header class="menu">
+        <div class="menu_container">
+            <h1 class="logo-titulo">
+                <a href="./index.html"><img class="logo" src="./img/Logo.png" alt="logo Mp"></a>
+            </h1>
+            <nav class="menu">
+                <ul>
+                    <li class="menu_enlaces"><a class="enlace" href="./about.html">Sobre mi</a></li>
+                    <li class="menu_enlaces"><a class="enlace"href="./skills.html">Skills</a></li>
+                    <li class="menu_enlaces"><a class="enlace"href="./hobbies.html">Hobbies</a></li>
+                    <li class="menu_enlaces"><a class="enlace"href="./formacion.html">Formación</a></li>
+                    <li class="menu_enlaces"><a class="enlace"href="./proyectos.html">Proyectos</a></li>
+                    <li class="menu_enlaces"><a class="enlace"href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+    <main  class="contenido">
+        <div class="contenedor-titulo">
+            <h1 class="titulo">Contacto.</h1>
+        </div>
+        <div class="contacto_container" >
+                <div class="formulario_container">
+                    <form action="https://formsubmit.co/perezjmartin12@gmail.com" method="POST" class="form" id="formulario">
+                        <div>
+                            <label>Nombre</label>
+                            <input id="nombre" class="form__input" type="text" name="Nombre" placeholder="Ingrese su nombre" minlength="3" maxlength="60">
+                        </div>
+                        <div>
+                            <label>Correo</label>
+                            <input id="correo" class="form__input" type="email" name="Correo" placeholder="Ingrese su correo" maxlength="30">
+                        </div>
+                        <div>
+                            <label>Asunto</label>
+                            <input id="asunto" class="form__input" type="text" name="asunto" placeholder="Ingrese el asunto" minlength="3" maxlength="60">
+                        </div>
+                        <div>
+                            <label>Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" cols="35" rows="10" placeholder="Ingrese su mensaje" minlength="10" maxlength="301"></textarea>
+                        </div>
+                        <div class="form__boton">
+                            
+                            <input  id="enviar" type="submit" class="boton" value="Enviar" name="boton" placeholder="">
+                            <input type="hidden" name="_next" value="https://tinchogithub.github.io/Portafolio/">
+                            <input type="hidden" name="_captcha" value="false">
+                            
+                        </div>
+                    </form>
+                </div>
+                <div class="medio"></div>
+                <div class="contacto_logo">
+                    <img src="./img/contacto.png" alt="Logo contacto">
+                </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>Diseñado y Desarrollado por Martín Perez</p>
+            <p>Copyright © 2022 MP</p>
+            <div class="footer__iconos">
+                <a href="https://github.com/TinchoGithub" target="_blank" class="iconos"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/juan-martín-perez-902bb2199" target="_blank" class="iconos"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="http://www.instagram.com/_t_i_n_c_h_o_/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </footer>
+    
+    <script src="./js/validacion.js"></script>
+    
+</body>
+</html>

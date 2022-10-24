@@ -1,0 +1,42 @@
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    
+}
+.footer{
+    background: #0c0513;
+    opacity: 90%;
+    height: 3rem;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid var(--color-primario);
+    /* box-shadow: 0 0 10px #c95bf5, 0 0 40px #c95bf5, 0 0 80px #c95bf5; */
+    
+    
+}
+
+.footer p{
+    color: #8d9092;
+    padding: 2px;
+    font-family: "parrafo";
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.fa-brands{
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 1rem;
+   
+    
+}
+
+.fa-brands:hover{
+    color: var(--color-primario);
+    
+
+}
