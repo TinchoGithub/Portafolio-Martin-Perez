@@ -1,70 +1,71 @@
-.contenido{
-    display: flex;
-    justify-content: center;
-    
-}
-.container{
-    display: flex;
-    align-items: center;
-    height: 400px;
-    width: 800px;
-    background: rgb(0, 0, 0, 0.20);
-    border: 2px solid var(--color-primario);
-    border-radius: 1rem;
-    box-shadow: 0 0 10px var(--color-primario), 0 0 20px var(--color-primario), 0 0 60px var(--color-primario);
-    margin-top: 4rem;
-    
-
-       
-    
-}
 
 .about{
     display: flex;
-    justify-content: space-between;
-    
-    
-   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
 }
-.about__container{   
+
+
+
+.about__info{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 620px;
+    width: 80%;
+    background: rgb(0, 0, 0, 0.70);
+    border: 2px solid var(--color-primario);
+    box-shadow: 0 0 10px var(--color-primario), 0 0 20px var(--color-primario), 0 0 60px var(--color-primario);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.about__avatar{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+
+}
+
+.info{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-       
-    
 }
 
-
-.about__p{
-    padding: 2rem;
-    margin-top: 2rem;
+.info__titulo{
+    color: var(--color-primario);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    
+}
+.info__parrafo{
     font-family: "parrafo";
     letter-spacing: 1px;
     text-align:center;
     line-height: 20px;
     color: rgb(255, 255, 255);
-    font-size: 18px;
-    
-    
-   
-    
+    font-size: 16px; 
 }
 
-.about__titulo{
-    
-    color: var(--color-primario);
-    font-family: "titulo";
-    font-size: 35px;
+.boton{
+    background: var(--color-primario);
+    margin-top: 10px;
+    font-size: 1rem;
+    border: none;
+    width: 70%;
+    height: 40px;
+    color:#fff;
 }
-.about__avatar{
-    padding-right: 2rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;  
-}
-.about__avatar button{
-    margin-top: 3rem;
+
+.boton:hover{
+    box-shadow: 0 0 10px var(--color-primario), 0 0 20px var(--color-primario), 0 0 60px var(--color-primario);
+    cursor: pointer;
 }
 
 #descargar{
@@ -74,149 +75,82 @@
 
 /*  Responsive */
 
-
- /* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
-    html{
-        height: 1100px;
+    .info__parrafo{
+        font-size: 14px;
     }
 
-    body{
-        background-size: 270vh !important;
-        height: auto;
-    }
-    .container{
-        width: 80%;
-        height: 100%;
-        margin-top: 2rem;
+    .info__titulo{
+        font-size: 20px;
     }
 
-    .about{
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    .about__avatar{
-        padding: 0;
-    }
-
-    .about__avatar img{
-        width: 200px;
-        height: auto;
-        
-        align-items: center;
-    }
-
-    .about__titulo h2{
-        display: none;
-    }
-
-    .about__avatar button{
-        margin-top: 1rem;
-       
-    }
-
-    .about__p{
-        margin-top: 0;
-        padding-top: 1rem;
-    }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .container{
-        width: 550px;
-        height: 100%;
-        margin-top: 2rem;
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px){
+    
+    .avatar{
+        width: 300px;
+        height: auto;
     }
 
-    .about{
-        flex-direction: column-reverse;
-        text-align: center;
+    .info__titulo{
+        font-size: 30px;
+    }
+
+    .info__parrafo{
+        font-size: 16px;
+    }
+
+    .boton{
+        width: 50%;
     }
     
-    html{
-        height: 110% !important;
-    }
+ }
 
-    body{
-        background-size: 220vh !important;
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+    .boton{
+        width: 40%;
     }
+ }
 
-    .about__avatar{
-        padding: 0;
-    }
-
-    .about__avatar img{
-        width: 200px;
-        height: auto;
-        
-        align-items: center;
-    }
-
-    .about__titulo h2{
-        display: none;
-    }
-
-    .about__avatar button{
-        margin-top: 1rem;
-       
-    }
-
-    .about__p{
-        margin-top: 0;
-        padding-top: 1rem;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-    html{
-        height: 100% !important;
-    }
-    .about{
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+    .about__info{
         flex-direction: row;
+        align-items: center;
+        height: 400px;
         
     }
 
-    .about__titulo h2{
-        display: flex;
-    }
-
-    .container{
-        height: 400px;
-        width: 700px;
-        margin-top: 3rem;
-     
-    }
+    body{
     
-   
-    
-    .about__titulo{
-        margin-top: 1rem;
-        font-size: 35px;
+        background-size:195vh;
+        
     }
-    .about__avatar{
-        padding-right: 2rem;
-        display: flex;
-        align-items: center;
-        flex-direction: column;  
-    }
-    .about__avatar button{
-        margin-top: 3rem;
+    .info__titulo{
+        font-size: 40px;
     }
 
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .container{
-        width: 800px;
+    .info__parrafo{
+        font-size: 20px;
+        margin-top: 2rem;
     }
-}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {} 
+    .info{
+        padding: 2rem;
+    }
+
+    .boton{
+        width: 70%;
+    }
+ }
+
+ @media only screen and (min-width: 1200px) {
+    body{
+        background-size: 210vh;
+    }
+ }
 

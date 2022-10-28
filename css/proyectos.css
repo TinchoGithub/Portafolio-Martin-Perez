@@ -1,71 +1,143 @@
-.card img{
-    height: 300px !important;
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    width: 100%;
 }
 .card{
-    height: 450px !important;
-    width: 350px !important;
-    margin-bottom: 4rem;
-    padding-bottom: 1rem;
-    transition: all .5s;
-    
-    
-}
-
-#img-angular{
-    width: 270px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     height: auto;
+    border-bottom: 1px solid var(--color-primario);
+    background: rgb(0, 0, 0, 0.80);
+    text-align: center;
+    box-shadow: 0 0 10px var(--color-primario), 0 0 20px var(--color-primario), 0 0 60px var(--color-primario);
     
+}      
+
+.imagen{
+    object-fit: cover;
+    width:100%;
+    height:100%;
 }
 
-.card h2{
+.card__titulo{
     font-family: "titulo";
     letter-spacing: 2px;
     font-size: 30px;
+    color: var(--color-primario);
+    
+    margin-top: 1rem;
+}
+.card__subtitulo{
+    font-size: 14px;
+    color: rgb(255, 255, 255, 0.50);
+    margin-bottom: 1rem;
+    font-family: "parrafo";
+    
 }
 
-.card p{
+.card__parrafo{
     font-family: "parrafo";
+    font-size: 12px;
     letter-spacing: 1px;
+    color: #ffffff;
+    color: rgb(255, 255, 255, 0.50);
+}
+
+.card__parrafo:hover{
+    color: #ffffff;
 }
 
 .formacion{
     margin: 0 5rem 1rem 5rem ;
 }
 
-.card:hover{
-    width: 360px !important;
-    height: 460px !important;
-}
 
-.iconos-container{
+.card__iconos{
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 5px;
+    margin-bottom: 1rem;
 
     
 }
 
-.iconos-container-solo{
+.card__icono--solo{
     display: flex;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
-.iconos-container-solo i{
-    padding: 5px 0 0 0 !important;
-}
 
 #icono-proyecto{
     font-size: 40px;
     color: rgb(255, 255, 255, 0.50);
-    padding: 5px 20px 0 0;
-    
-    
+    padding: 5px 20px 5px 0;  
 }
 
 #icono-proyecto:hover{
-   
     color: var(--color-primario);
-
 }
+
+.card--ultimo{
+    margin-bottom: 8rem;
+}
+
+/* Responsive */
+
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+    .card__parrafo{
+        padding: 1rem;
+        font-size: 14px;
+    }   
+    
+    .card__titulo{
+        font-size: 35px;
+    }
+
+    .card__subtitulo{
+        font-size: 16px;
+    }
+
+ }
+
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+   
+    .proyectos{
+        width: 80%;
+    }
+        
+ }
+
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px){
+
+    .proyectos{
+        width: 60%;
+    }
+
+    .card__titulo{
+        font-size: 40px;
+    }
+
+    .card__subtitulo{
+        font-size: 18px;
+    }
+
+    .card__parrafo{
+        font-size: 16px;
+    }
+    
+    #icono-proyecto{
+        font-size: 45px;
+    }
+} 
 

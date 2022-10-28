@@ -1,34 +1,33 @@
 
-.menu_container{
+.menu{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 94%;
-    margin: 0 auto;
     font-family: "parrafo";
-    
-   
-
+    margin: 1rem 1rem 0 1rem;
 }
 
 .logo{
-    width: 80px;
+    width: 70px;
     height: auto;
 }
 
-.menu_enlaces{
+.navegacion__enlaces{
     min-width: 100px;
+    font-size: 14px;
     text-align: center;
 }
 
-.menu_enlaces a{
+.enlace{
     text-decoration: none;
     color: #ffffff;   
     font-size: 15px;
     letter-spacing: 2px; 
 }
 
-.menu ul{
+.navegacion{
     display: flex;
    
    
@@ -36,15 +35,69 @@
 
 .enlace{
     padding: 15px 30px;
-    font-size: 1rem;
+    font-size: 15px;
     
     border-radius: 10px;
     overflow: hidden;
 }
 
 .enlace:hover{
-    background: #c95bf5;
-    box-shadow: 0 0 10px var(--color-primario), 0 0 40px var(--color-primario), 0 0 80px var(--color-primario);
-    transition-delay: .2s;
-   
+    color: #c95bf5;
+
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+    
+    
+
+    .navegacion{
+        flex-direction: column;
+        padding: 1rem;
+        
+    }
+     
+    .navegacion__enlaces{
+        margin-bottom: 1rem;
+        
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px){
+
+    .menu{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .enlace{
+        width: 10px;
+        padding: 15px 5px;
+        font-size: 14px;
+    }
+    .enlace:hover{
+        background: #c95bf5;
+        color: #ffffff;
+        box-shadow: 0 0 10px var(--color-primario), 0 0 40px var(--color-primario), 0 0 80px var(--color-primario);
+        transition-delay: .2s;
+    }
+    .navegacion__enlaces{
+        min-width: 50px;
+        text-align: center;
+    }
+ }
+
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px){
+    .logo{
+        width: 80px;
+        height: auto;
+    }
+    .enlace{
+        font-size: 18px;
+        padding: 15px 10px;
+    }
+ }

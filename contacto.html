@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu.css"> 
-    <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/contacto.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+   
     
     <link rel="stylesheet" href="./css/footer.css">
     <script src="https://kit.fontawesome.com/c4b76b6bec.js" crossorigin="anonymous"></script>
@@ -25,74 +25,73 @@
 <body  >
     
 
-    <header class="menu">
-        <div class="menu_container">
-            <h1 class="logo-titulo">
+    <header >
+        <div class="menu container">
+            <h1 class="menu__logo">
                 <a href="./index.html"><img class="logo" src="./img/Logo.png" alt="logo Mp"></a>
             </h1>
-            <nav class="menu">
-                <ul>
-                    <li class="menu_enlaces"><a class="enlace" href="./about.html">Sobre mi</a></li>
-                    <li class="menu_enlaces"><a class="enlace"href="./skills.html">Skills</a></li>
-                    <li class="menu_enlaces"><a class="enlace"href="./hobbies.html">Hobbies</a></li>
-                    <li class="menu_enlaces"><a class="enlace"href="./formacion.html">Formación</a></li>
-                    <li class="menu_enlaces"><a class="enlace"href="./proyectos.html">Proyectos</a></li>
-                    <li class="menu_enlaces"><a class="enlace"href="./contacto.html">Contacto</a></li>
+            <nav class="menu__navegacion">
+                <ul class="navegacion container">
+                    <li class="navegacion__enlaces"><a class="enlace" href="./about.html">Sobre mi</a></li>
+                    <li class="navegacion__enlaces"><a class="enlace"href="./skills.html">Skills</a></li>
+                    <li class="navegacion__enlaces"><a class="enlace"href="./hobbies.html">Hobbies</a></li>
+                    <li class="navegacion__enlaces"><a class="enlace"href="./formacion.html">Formación</a></li>
+                    <li class="navegacion__enlaces"><a class="enlace"href="./proyectos.html">Proyectos</a></li>
+                    <li class="navegacion__enlaces"><a class="enlace"href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>    
     </header>
 
     <main  class="contenido">
-        <div class="contenedor-titulo">
+        <div class="contenedor__titulo">
             <h1 class="titulo">Contacto.</h1>
         </div>
-        <div class="contacto_container" >
-                <div class="formulario_container">
-                    <form action="https://formsubmit.co/perezjmartin12@gmail.com" method="POST" class="form" id="formulario">
-                        <div>
-                            <label>Nombre</label>
-                            <input id="nombre" class="form__input" type="text" name="Nombre" placeholder="Ingrese su nombre" minlength="3" maxlength="60">
+        <div class="contacto container" >
+                <div class="contacto__formulario">
+                    <div class="formulario__logo">
+                        <img class="logo--form" src="./img/contacto.png" alt="Logo contacto">
+                    </div>
+                    <div class="medio"></div>
+                    <form action="https://formsubmit.co/perezjmartin12@gmail.com" method="POST" class="formulario" id="formulario">
+                        <div class="formulario__campos">
+                            <label class="campos__label">Nombre</label>
+                            <input id="nombre" class="campos__input" type="text" name="Nombre" placeholder="Ingrese su nombre" minlength="3" maxlength="60">
                         </div>
-                        <div>
-                            <label>Correo</label>
-                            <input id="correo" class="form__input" type="email" name="Correo" placeholder="Ingrese su correo" maxlength="30">
+                        <div class="formulario__campos">
+                            <label class="campos__label">Correo</label>
+                            <input id="correo" class="campos__input" type="email" name="Correo" placeholder="Ingrese su correo" maxlength="30">
                         </div>
-                        <div>
-                            <label>Asunto</label>
-                            <input id="asunto" class="form__input" type="text" name="asunto" placeholder="Ingrese el asunto" minlength="3" maxlength="60">
+                        <div class="formulario__campos">
+                            <label class="campos__label">Asunto</label>
+                            <input id="asunto" class="campos__input" type="text" name="asunto" placeholder="Ingrese el asunto" minlength="3" maxlength="60">
                         </div>
-                        <div>
-                            <label>Mensaje</label>
-                            <textarea name="mensaje" id="mensaje" cols="35" rows="10" placeholder="Ingrese su mensaje" minlength="10" maxlength="301"></textarea>
+                        <div class="formulario__campos">
+                            <label class="campos__label">Mensaje</label>
+                            <textarea class="campos__mensaje" name="mensaje" id="mensaje" cols="35" rows="10" placeholder="Ingrese su mensaje" minlength="10" maxlength="301"></textarea>
                         </div>
-                        <div class="form__boton">
-                            
-                            <input  id="enviar" type="submit" class="boton" value="Enviar" name="boton" placeholder="">
+                        <div class="formulario__boton">
+                            <input  id="enviar" type="submit" class="boton--form" value="Enviar" name="boton" placeholder="">
                             <input type="hidden" name="_next" value="https://tinchogithub.github.io/Portafolio-Martin-Perez/">
                             <input type="hidden" name="_captcha" value="false">
                             
                         </div>
                     </form>
                 </div>
-                <div class="medio"></div>
-                <div class="contacto_logo">
-                    <img src="./img/contacto.png" alt="Logo contacto">
-                </div>
+                
         </div>
     </main>
 
     <footer>
         <div class="footer">
-            <p>Diseñado y Desarrollado por Martín Perez</p>
-            <p>Copyright © 2022 MP</p>
+            <p class="footer__p">Diseñado y Desarrollado por Martín Perez</p>
+            <p class="footer__p" >Copyright © 2022 MP</p>
             <div class="footer__iconos">
                 <a href="https://github.com/TinchoGithub" target="_blank" class="iconos"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/juan-martín-perez-902bb2199" target="_blank" class="iconos"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="http://www.instagram.com/_t_i_n_c_h_o_/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
-
     </footer>
     
     <script src="./js/validacion.js"></script>

@@ -1,30 +1,24 @@
-footer{
-    position: fixed;
+
+.footer{
     bottom: 0;
     width: 100%;
-
-    
-}
-.footer{
     background: #0c0513;
-    opacity: 90%;
-    height: 3rem;
-    
+    height: 5rem;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
-    border-top: 2px solid var(--color-primario);
-    /* box-shadow: 0 0 10px #c95bf5, 0 0 40px #c95bf5, 0 0 80px #c95bf5; */
-    
-    
+    padding-bottom: 1rem;
+    position: fixed;
+    border-top: 3px solid var(--color-primario);
 }
 
-.footer p{
+.footer__p{
     color: #8d9092;
     padding: 2px;
     font-family: "parrafo";
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .fa-brands{
@@ -40,3 +34,42 @@ footer{
     
 
 }
+
+    
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    
+    .footer{
+        
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2px;
+        
+    }    
+}
+    
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+
+    .fa-brands{
+        font-size: 3rem;
+    }
+
+    .footer__p{
+        font-size: 16px;
+    }
+}
+
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px){
+
+    .footer{
+        
+        height: 4rem;
+    }
+    
+ }

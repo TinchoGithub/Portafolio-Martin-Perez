@@ -12,9 +12,8 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu.css">
-    <link rel="stylesheet" href="./css/formacion.css">
     <link rel="stylesheet" href="./css/proyectos.css">
-    <link rel="stylesheet" href="./css/home.css"> 
+    
     
     <link rel="stylesheet" href="./css/footer.css">
     <script src="https://kit.fontawesome.com/c4b76b6bec.js" crossorigin="anonymous"></script>
@@ -24,19 +23,19 @@
 <body  >
     
 
-    <header class="menu">
-        <div class="menu_container">
-            <h1 class="logo-titulo">
+    <header >
+        <div class="menu container">
+            <h1 class="menu__logo">
                 <a href="./index.html"><img class="logo" src="./img/Logo.png" alt="logo Mp"></a>
             </h1>
-            <nav class="menu">
-                <ul>
-                    <li class="menu_enlaces"><a class="enlace" href="./about.html">Sobre mi</a></li>
-                    <li class="menu_enlaces"><a class="enlace"href="./skills.html">Skills</a></li>
-                    <li class="menu_enlaces"><a class="enlace"href="./hobbies.html">Hobbies</a></li>
-                    <li class="menu_enlaces"><a class="enlace"href="./formacion.html">Formación</a></li>
-                    <li class="menu_enlaces"><a class="enlace"href="./proyectos.html">Proyectos</a></li>
-                    <li class="menu_enlaces"><a class="enlace"href="./contacto.html">Contacto</a></li>
+            <nav class="menu__navegacion">
+                <ul class="navegacion container">
+                    <li class="navegacion__enlaces"><a class="enlace" href="./about.html">Sobre mi</a></li>
+                    <li class="navegacion__enlaces"><a class="enlace"href="./skills.html">Skills</a></li>
+                    <li class="navegacion__enlaces"><a class="enlace"href="./hobbies.html">Hobbies</a></li>
+                    <li class="navegacion__enlaces"><a class="enlace"href="./formacion.html">Formación</a></li>
+                    <li class="navegacion__enlaces"><a class="enlace"href="./proyectos.html">Proyectos</a></li>
+                    <li class="navegacion__enlaces"><a class="enlace"href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>    
@@ -44,89 +43,147 @@
 
     <main  class="contenido">
         
-        <div class="contenedor-titulo">
+        <div class="contenedor__titulo">
             <h1 class="titulo">Proyectos.</h1>
         </div>
-        <div class="formacion">
+        <div class="proyectos">
             <div class="card">
-                <img src="./img/proyectos/react.png" alt="React">
-                <h2>Rick and Morty WIKI</h2>
-                <p>Aplicación Web (SPA) <br> desarrollada con <br> React js | React-Bootstrap</p>
-                <div class="iconos-container">
-                    <a href="https://github.com/TinchoGithub/Wiki-RickandMorty-React-" target="__blank"><i id="icono-proyecto" class="fa-brands fa-github" title="Repositorio" ></i></a>
-                    <a href="http://wikirickymorty.infinityfreeapp.com/" target="__blank"><i class="fa-solid fa-earth-americas" title="Demo" id="icono-proyecto"></i></a>
+                <div class="card__imagen">
+                    <img class="imagen" src="./img/proyectos/gym.png" alt="Gym Your Name">
                 </div>
-                
+                <div class="card__info">
+                    <h2 class="card__titulo">Gym Your Name</h2>
+                    <h3 class="card__subtitulo">Html | Css | Js</h3>
+                    <p class="card__parrafo">Sitio Web desarrollado para un gimnasio, este proyecto lo realice con html, css y javascript implementado la metodología Mobile First para mejorar el layaout del sitio. Además, para mejorar la estructura general del código y los archivos css, hago uso de la Metodología BEM.</p>
+                    <div class="card__iconos">
+                        <a href="https://github.com/TinchoGithub/gym/" target="__blank"><i id="icono-proyecto" class="fa-brands fa-github" title="Repositorio" ></i></a>
+                        <a href="https://tinchogithub.github.io/gym/" target="__blank"><i class="fa-solid fa-earth-americas" title="Demo" id="icono-proyecto"></i></a>
+                    </div>
+                </div>   
             </div>
             <div class="card">
-                <img src="./img/proyectos/v&v.png" alt="V & V Servicios">
-                <h2>V & V Servicios</h2>
-                <p>Sitio Web desarrollado con <br> HTML | Css | Js | Bootstrap</p>
-                <div class="iconos-container">
-                    <a href="https://github.com/TinchoGithub/vyv-servicios" target="__blank"><i id="icono-proyecto" class="fa-brands fa-github" title="Repositorio" ></i></a>
-                    <a href="https://tinchogithub.github.io/vyv-servicios/" target="__blank"><i class="fa-solid fa-earth-americas" title="Demo" id="icono-proyecto"></i></a>
+                <div class="card__imagen">
+                    <img class="imagen" src="./img/proyectos/react.png" alt="React">
                 </div>
+                <div class="card__info">
+                    <h2 class="card__titulo">Rick and Morty WIKI</h2>
+                    <h3 class="card__subtitulo">React Js | React-bootstrap</h3>
+                    <p class="card__parrafo">Aplicación Web (SPA) desarrollada con React JS que muestra los personajes de la serie Rick an Morty. En la misma utilizo los Hooks de React, utilizo axios para los llamados a la API REST de Rick and Morty, hago uso de react-router-dom para manipular la navegacion entre el paginado (Home, Registro, Login). Ademas utilizo react-hook-form para la construccion del formulario y Firebase como base de datos para guardar la informacion de los usiarios y la autenticacion para logearse. Tambien hago uso de react-bootstrap para darle estilos.</p>
+                    <div class="card__iconos">
+                        <a href="https://github.com/TinchoGithub/Wiki-RickandMorty-React-" target="__blank"><i id="icono-proyecto" class="fa-brands fa-github" title="Repositorio" ></i></a>
+                        <a href="http://wikirickymorty.infinityfreeapp.com/" target="__blank"><i class="fa-solid fa-earth-americas" title="Demo" id="icono-proyecto"></i></a>
+                    </div> 
+                </div>  
             </div>
             <div class="card">
-                <img src="./img/proyectos/encriptador.png" alt="Encriptador de Texto">
-                <h2>Encriptador de Texto</h2>
-                <p>Proyecto desarrollado con <br> HTML | Css | Js</p>
-                <div class="iconos-container">
-                    <a href="https://github.com/TinchoGithub/Encriptador-de-Texto" target="__blank"><i id="icono-proyecto" class="fa-brands fa-github" title="Repositorio" ></i></a>
-                    <a href="https://tinchogithub.github.io/Encriptador-de-Texto/" target="__blank"><i class="fa-solid fa-earth-americas" title="Demo" id="icono-proyecto"></i></a>
+                <div class="card__imagen">
+                    <img class="imagen" src="./img/proyectos/v&v.png" alt="V & V Servicios">
                 </div>
-            </div>
-            <div class="card">
-                <img src="./img/proyectos/api.jpeg" alt="E-comerce">
-                <h2>Servicios E-comerce</h2>
-                <p>Api Rest desarrollada con <br> Node js | Express | Mongo DB | Mongoose | JWT </p>
-                <div class="iconos-container-solo">
-                    <a href="https://github.com/TinchoGithub/Backend" target="__blank"><i id="icono-proyecto" class="fa-brands fa-github" title="Repositorio" ></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./img/proyectos/c-sharp.png" alt="C#">
-                <h2>Cable y Telefonía <br> Sistema de Gestión</h2>
-                <p>Aplicación de escritorio <br> desarrollada con <br> C# | POO</p>
-                <div class="iconos-container-solo">
-                    <a href="https://github.com/TinchoGithub/Proyecto-C-" target="__blank"><i id="icono-proyecto" class="fa-brands fa-github" title="Repositorio" ></i></a>
+                <div class="card__info">
+                    <h2 class="card__titulo">V & V Servicios</h2>
+                    <h3 class="card__subtitulo">Html | Css | Js | Bootstrap</h3>
+                    <p class="card__parrafo">Sitio Web desarrollado para la empresa V&V Servicios que presta servicios para compañías vinculadas a la producción, transporte y procesos de hidrocarburos, energía, minería e infraestructura, entre otras. La misma la desarrolle con html, css, javascript y utilizo Bootstrap para darle estilo al sitio.</p>
+                    <div class="card__iconos">
+                        <a href="https://github.com/TinchoGithub/vyv-servicios" target="__blank"><i id="icono-proyecto" class="fa-brands fa-github" title="Repositorio" ></i></a>
+                        <a href="https://tinchogithub.github.io/vyv-servicios/" target="__blank"><i class="fa-solid fa-earth-americas" title="Demo" id="icono-proyecto"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <img src="./img/proyectos/python.png" alt="La Mansion Embrujada Python">
-                <h2>La Mansion Embrujada</h2>
-                <p>Juego de escritorio <br> desarrollado con <br> Python | POO</p>
-                <div class="iconos-container-solo">
-                    <a href="https://github.com/TinchoGithub/Python-POO" target="__blank"><i id="icono-proyecto" class="fa-brands fa-github" title="Repositorio" ></i></a>
+                <div class="card__imagen">
+                    <img class="imagen" src="./img/proyectos/encriptador.png" alt="Encriptador de Texto">
                 </div>
-                
+                <div class="card__info">
+                    <h2 class="card__titulo">Encriptador de Texto</h2>
+                    <h3 class="card__subtitulo">Html | Css | Js</h3>
+                    <p class="card__parrafo">Aplicación web de Encriptador de Texto. La misma permite encriptar un mensaje y desencriptarlo, desarrollada con html, css y javascript para realizar la lógica de la misma.</p>
+                    <div class="card__iconos">
+                        <a href="https://github.com/TinchoGithub/Encriptador-de-Texto" target="__blank"><i id="icono-proyecto" class="fa-brands fa-github" title="Repositorio" ></i></a>
+                        <a href="https://tinchogithub.github.io/Encriptador-de-Texto/" target="__blank"><i class="fa-solid fa-earth-americas" title="Demo" id="icono-proyecto"></i></a>
+                    </div>
+                </div>
             </div>
             <div class="card">
-                <img id="img-angular" src="./img/skills/angular.png" alt="Proyecto Angular">
-                <h2>Angular</h2>
-                <p>Aplicación Web (SPA) <br> desarrollada con <br> Angular</p>
-                <div class="iconos-container">
-                    <a href="https://github.com/TinchoGithub/Angular" target="__blank"><i id="icono-proyecto" class="fa-brands fa-github" title="Repositorio" ></i></a>
-                    <a href=""><i class="fa-solid fa-earth-americas" title="Demo" id="icono-proyecto"></i></a>
+                <div class="card__imagen">
+                    <img class="imagen" src="./img/proyectos/portafolio.png" alt="Portafolio">
+                </div>
+                <div class="card__info">
+                    <h2 class="card__titulo" >Portafolio</h2>
+                    <h3 class="card__subtitulo">Html | Css | Js </h3>
+                    <p class="card__parrafo" >Portafolio personal desarrollado con la metodología Mobile First y la Metodología BEM para tener un código mas legible y ordenado. En este proyecto hago uso de dos librerias externas de javascript, una para dar el efecto de particulas de fondo y la otra la utilizo en el título para dar ese efecto de maquina de escribir.  </p>
+                    <div class="card__iconos">
+                        <a href="https://github.com/TinchoGithub/Portafolio-Martin-Perez/" target="__blank"><i id="icono-proyecto" class="fa-brands fa-github" title="Repositorio" ></i></a>
+                        <a href="https://tinchogithub.github.io/Portafolio-Martin-Perez/" target="__blank"><i class="fa-solid fa-earth-americas" title="Demo" id="icono-proyecto"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__imagen">
+                    <img class="imagen" src="./img/proyectos/api.jpeg" alt="E-comerce">
+                </div>
+                <div class="card__info">
+                    <h2 class="card__titulo" >Servicios E-comerce</h2>
+                    <h3 class="card__subtitulo">Node js | Express | Mongo DB | Mongoose | JWT</h3>
+                    <p class="card__parrafo" >Api Rest con servicios para una E-commerce desarrollada con NOode Js y el framework Express para crear la estructura de la API, hago uso de Mongoose para conectar con la base de datos no relacional Mongo DB y utilizo JWT (Json Web Tokken), para la generación del token y poder validar que usario esta logeado y que acciones puede realizar en la misma. </p>
+                    <div class="card__icono--solo">
+                        <a href="https://github.com/TinchoGithub/Backend" target="__blank"><i id="icono-proyecto" class="fa-brands fa-github" title="Repositorio" ></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__imagen">
+                    <img class="imagen" src="./img/proyectos/c-sharp.png" alt="C#">
+                </div>
+                <div class="card__info">
+                    <h2 class="card__titulo" >Cable y Telefonía <br> Sistema de Gestión</h2>
+                    <h3 class="card__subtitulo">C# | POO</h3>
+                    <p class="card__parrafo">Aplicación de escritorio desarrollado con C# en el paradigama orientado a objetos, la misma simula la gestion de una empresa de cable, telefonia e internet. Abarca los siguientes temas Herencia, Composicion de Clase, Polimorfismo, Recursividad y Ordenamiento</p>
+                    <div class="card__icono--solo">
+                        <a href="https://github.com/TinchoGithub/Proyecto-C-" target="__blank"><i id="icono-proyecto" class="fa-brands fa-github" title="Repositorio" ></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__imagen">
+                    <img class="imagen" src="./img/proyectos/python.png" alt="La Mansion Embrujada Python">
+                </div>
+                <div class="card__info">
+                    <h2 class="card__titulo" >La Mansion Embrujada</h2>
+                    <h3 class="card__subtitulo">Python | POO</h3>
+                    <p class="card__parrafo">Aplicación de escritorio basada en un juego de texto desarrollado con Python en paradigma orientado a objetos.</p>
+                    <div class="card__icono--solo">
+                        <a href="https://github.com/TinchoGithub/Python-POO" target="__blank"><i id="icono-proyecto" class="fa-brands fa-github" title="Repositorio" ></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card card--ultimo">
+                <div class="card__imagen">
+                    <img src="./img/skills/angular.png" alt="Angular" class="imagen">
+                </div>
+                <div class="card__info">
+                    <h2 class="card__titulo">Angular</h2>
+                    <p class="card__parrafo">Aplicación Web (SPA) <br> desarrollada con <br> Angular</p>
+                    <div class="card__iconos">
+                        <a href="https://github.com/TinchoGithub/Angular" target="__blank"><i id="icono-proyecto" class="fa-brands fa-github" title="Repositorio" ></i></a>
+                        <a href=""><i class="fa-solid fa-earth-americas" title="Demo" id="icono-proyecto"></i></a>
+                    </div>
                 </div>
             </div>
             
-        </div>
         </div>
         
     </main>
 
     <footer>
         <div class="footer">
-            <p>Diseñado y Desarrollado por Martín Perez</p>
-            <p>Copyright © 2022 MP</p>
+            <p class="footer__p">Diseñado y Desarrollado por Martín Perez</p>
+            <p class="footer__p" >Copyright © 2022 MP</p>
             <div class="footer__iconos">
                 <a href="https://github.com/TinchoGithub" target="_blank" class="iconos"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/juan-martín-perez-902bb2199" target="_blank" class="iconos"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="http://www.instagram.com/_t_i_n_c_h_o_/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
-
     </footer>
     
     

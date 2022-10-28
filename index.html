@@ -20,53 +20,52 @@
 </head>
 <body  >
     
-
-    <header class="menu">
-        <div class="menu_container">
-            <h1 class="logo-titulo">
+    <div id="particles-js"></div>
+    <header >
+        <div class="menu container">
+            <h1 class="menu__logo">
                 <a href="./index.html"><img class="logo" src="./img/Logo.png" alt="logo Mp"></a>
             </h1>
-            <nav class="menu">
-                <ul>
-                    <li class="menu_enlaces"><a class="enlace" href="./about.html">Sobre mi</a></li>
-                    <li class="menu_enlaces"><a class="enlace"href="./skills.html">Skills</a></li>
-                    <li class="menu_enlaces"><a class="enlace"href="./hobbies.html">Hobbies</a></li>
-                    <li class="menu_enlaces"><a class="enlace"href="./formacion.html">Formación</a></li>
-                    <li class="menu_enlaces"><a class="enlace"href="./proyectos.html">Proyectos</a></li>
-                    <li class="menu_enlaces"><a class="enlace"href="./contacto.html">Contacto</a></li>
+            <nav class="menu__navegacion">
+                <ul class="navegacion container">
+                    <li class="navegacion__enlaces"><a class="enlace" href="./about.html">Sobre mi</a></li>
+                    <li class="navegacion__enlaces"><a class="enlace"href="./skills.html">Skills</a></li>
+                    <li class="navegacion__enlaces"><a class="enlace"href="./hobbies.html">Hobbies</a></li>
+                    <li class="navegacion__enlaces"><a class="enlace"href="./formacion.html">Formación</a></li>
+                    <li class="navegacion__enlaces"><a class="enlace"href="./proyectos.html">Proyectos</a></li>
+                    <li class="navegacion__enlaces"><a class="enlace"href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>    
     </header>
 
     <main  class="contenido">
-        <div id="particles-js"></div>
-        <section  class="home">
-            <div class="home_container">
-                <div class="home-titulo">
-                    <h2 class="titulo">
-                        Hola! Soy Martín Perez <br><br><br><span class="typed"></span></h2>
+        
+        <section  >
+            <div class="home container">
+                <div class="home__titulo">
+                    <h2 class="home__titulo--principal">Hola! Soy Martín Perez
+                         <br> <span class="typed"></span> </h2>
                 </div>
-                <div class="home-img">
-                    <img src="./img/martin.png" alt="Martín Perez">
+                <div class="home__img">
+                    <img class="imagen" src="./img/martin.png" alt="Martín Perez">
                 </div>
             </div>
-
         </section>
     </main>
-
+    
     <footer>
         <div class="footer">
-            <p>Diseñado y Desarrollado por Martín Perez</p>
-            <p>Copyright © 2022 MP</p>
+            <p class="footer__p">Diseñado y Desarrollado por Martín Perez</p>
+            <p class="footer__p" >Copyright © 2022 MP</p>
             <div class="footer__iconos">
                 <a href="https://github.com/TinchoGithub" target="_blank" class="iconos"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/juan-martín-perez-902bb2199" target="_blank" class="iconos"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="http://www.instagram.com/_t_i_n_c_h_o_/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
-
     </footer>
+
     <script src="./js/particles.js"></script>
     <script src="./js/particles-config.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
