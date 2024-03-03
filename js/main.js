@@ -1,6 +1,6 @@
 const typed = new Typed('.typed', {
     strings: [
-        '<i class="titulo-animado">Full Stack Developer</i>'
+        '<i class="titulo-animado">Software Developer</i>'
         
     ],
     stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
